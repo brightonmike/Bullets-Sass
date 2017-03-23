@@ -83,5 +83,6 @@ $tabletbreak:rem-calc(768);
 $phabletbreak:rem-calc(460);
 $mobilebreak:rem-calc(320);
 
-$grid-break-point:rem-calc(768);
+$grid-break-point-tablet:$tabletbreak;
+$grid-break-point-desktop:$laptopbreak;
 // this is the width at which you want the fexbox grid to kick in - below this width will be single column
