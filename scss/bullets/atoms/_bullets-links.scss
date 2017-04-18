@@ -1,20 +1,18 @@
-a {
-	line-height: inherit;
-	color:$primary;
-
-	&:active {
+@mixin bullets-links {
+	a {
+		line-height: inherit;
 		color:$primary;
-	}
 
-	&:focus {
-		color:$primary;
-	}
-	
-	&:hover {
-		color:darken($primary, 10%);
-	}
+		&:active {
+			color:$primary;
+		}
 
-	// &:visited {
-	// 	color:darken($primary, 5%);
-	// }	
+		&:focus {
+			color:$primary;
+		}
+		
+		&:hover {
+			color:darken($primary, 10%);
+		}
+	}
 }
