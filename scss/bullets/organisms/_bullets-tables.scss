@@ -1,4 +1,6 @@
 @mixin bullets-table {
+	@include table-stripe;
+		
 	thead, tbody, tfoot {
 
 	}
@@ -39,5 +41,3 @@
 		}
 	}
 }
-
-@include table-stripe;
