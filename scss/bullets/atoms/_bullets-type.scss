@@ -22,7 +22,7 @@
 	}
 
 	h2 {
-		font-size:$h1-base-size;
+		font-size:$h2-base-size;
 
 		@include breakpoint(tablet) {
 			font-size:round($h2-base-size*1.2);

@@ -87,20 +87,29 @@
 // breakpoints 
 
  @mixin breakpoint($point) {
-   @if $point == desktop {
-     @media (min-width: $desktopbreak) { @content ; }
-  }
-   @else if $point == laptop {
-     @media (min-width: $laptopbreak) { @content ; }
-  }
-    @else if $point == tablet {
-     @media (min-width: $tabletbreak) { @content ; }
-  }
-   @else if $point == phablet {
-     @media (min-width: $phabletbreak)  { @content ; }
-  }
-  @else if $point == mobileonly {
-     @media (max-width: $mobilebreak)  { @content ; }
 
+  @if type-of($point) == 'string' {
+
+    @if $point == desktop {
+       @media (min-width: $desktopbreak) { @content ; }
+    }
+    @else if $point == laptop {
+       @media (min-width: $laptopbreak) { @content ; }
+    }
+    @else if $point == tablet {
+       @media (min-width: $tabletbreak) { @content ; }
+    }
+    @else if $point == phablet {
+       @media (min-width: $phabletbreak)  { @content ; }
+    }
+    @else if $point == mobileonly {
+       @media (max-width: $mobilebreak)  { @content ; }
+    }
+    
   }
+
+  @if type-of($point) == 'number' {
+    @media (min-width: $point) { @content ; }
+  }
+
 }
