@@ -1,0 +1,18 @@
+@mixin table-stripe() {
+  table:not(.no-stripe) tr {
+    // If stripe is set to even, darken the even rows.
+    @if $table-striped == even {
+      &:nth-child(even) {
+        border-bottom: 0;
+        background-color: $table-striped-background;
+      }
+    }
+
+    // If stripe is set to odd, darken the odd rows.
+    @else if $table-striped == odd {
+      &:nth-child(odd) {
+        background-color: $table-striped-background;
+      }
+    }
+  }
+}

@@ -75,6 +75,19 @@ $button-font-size:rem-calc(14);
 $button-rounded:true;
 $button-border-radius:40px;
 
+// tables
+$table-striped: even;
+$table-striped-background: $light-gray;
+$table-header-background: #eeeeee;
+$table-header-padding: rem-calc(10 12 10 12);
+$table-header-weight: $global-weight-bold;
+$table-body-background: #ffffff;
+$table-body-padding: rem-calc(10 12 10 12);
+$table-body-weight: $global-weight-normal;
+$table-footer-background: #eeeeee;
+$table-footer-padding: rem-calc(10 12 10 12);
+$table-footer-weight: $global-weight-normal;
+
 // Grid
 $desktopbreak:rem-calc(1280);
 $laptopbreak:rem-calc(1024);
