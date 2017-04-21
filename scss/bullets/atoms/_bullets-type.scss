@@ -6,99 +6,27 @@
 	}
 
 	h1 {
-		font-size:$h1-base-size;
-
-		@include breakpoint(tablet) {
-			font-size:round($h1-base-size*1.2);
-		}	
-
-		@include breakpoint(laptop) {
-			font-size:round($h1-base-size*1.4);
-		}	
-
-		@include breakpoint(desktop) {
-			font-size:round($h1-base-size*2.1);
-		}
+		@include font-size($h1-font-sizes);
 	}
 
 	h2 {
-		font-size:$h2-base-size;
-
-		@include breakpoint(tablet) {
-			font-size:round($h2-base-size*1.2);
-		}	
-
-		@include breakpoint(laptop) {
-			font-size:round($h2-base-size*1.4);
-		}	
-
-		@include breakpoint(desktop) {
-			font-size:round($h2-base-size*2.1);
-		}	
+		@include font-size($h2-font-sizes);
 	}
 
 	h3 {
-		font-size:$h3-base-size;
-
-		@include breakpoint(tablet) {
-			font-size:round($h3-base-size*1.2);
-		}	
-
-		@include breakpoint(laptop) {
-			font-size:round($h3-base-size*1.4);
-		}	
-
-		@include breakpoint(desktop) {
-			font-size:round($h3-base-size*2.1);
-		}	
+		@include font-size($h3-font-sizes);
 	}
 
 	h4 {
-		font-size:$h4-base-size;
-
-		@include breakpoint(tablet) {
-			font-size:round($h4-base-size*1.2);
-		}	
-
-		@include breakpoint(laptop) {
-			font-size:round($h4-base-size*1.4);
-		}	
-
-		@include breakpoint(desktop) {
-			font-size:round($h4-base-size*2.1);
-		}	
+		@include font-size($h4-font-sizes);
 	}
 
 	h5 {
-		font-size:$h5-base-size;
-
-		@include breakpoint(tablet) {
-			font-size:round($h5-base-size*1.2);
-		}	
-
-		@include breakpoint(laptop) {
-			font-size:round($h5-base-size*1.4);
-		}	
-
-		@include breakpoint(desktop) {
-			font-size:round($h5-base-size*2.1);
-		}	
+		@include font-size($h5-font-sizes);
 	}
 
 	h6 {
-		font-size:$h6-base-size;
-
-		@include breakpoint(tablet) {
-			font-size:round($h6-base-size*1.2);
-		}	
-
-		@include breakpoint(laptop) {
-			font-size:round($h6-base-size*1.4);
-		}	
-
-		@include breakpoint(desktop) {
-			font-size:round($h6-base-size*2.1);
-		}	
+		@include font-size($h6-font-sizes);
 	}
 
 
@@ -110,7 +38,6 @@
 		line-height:$paragraph-line-height;
 		margin:0 0 $paragraph-margin-bottom 0;
 	}
-
 
 
 	// Lists

@@ -35,6 +35,49 @@ $h4-base-size:18px;
 $h5-base-size:18px;
 $h6-base-size:16px;
 
+$h1-font-sizes: (
+  null  : 28px,
+  tablet : 31px,
+  laptop: 33px,
+  desktop : 36px
+);
+
+$h2-font-sizes: (
+  null  : 28px,
+  tablet : 31px,
+  laptop: 33px,
+  desktop : 36px
+);
+
+$h3-font-sizes: (
+  null  : 28px,
+  tablet : 31px,
+  laptop: 33px,
+  desktop : 36px
+);
+
+$h4-font-sizes: (
+  null  : 28px,
+  tablet : 31px,
+  laptop: 33px,
+  desktop : 36px
+);
+
+$h5-font-sizes: (
+  null  : 28px,
+  tablet : 31px,
+  laptop: 33px,
+  desktop : 36px
+);
+
+$h6-font-sizes: (
+  null  : 28px,
+  tablet : 31px,
+  laptop: 33px,
+  desktop : 36px
+);
+
+
 $header-font-family:'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $header-line-height:1.2;
 $header-bottom-margin:rem-calc(30);
@@ -95,17 +138,18 @@ $laptopbreak:rem-calc(1024);
 $tabletbreak:rem-calc(768);
 $phabletbreak:rem-calc(460);
 $mobilebreak:rem-calc(320);
+
 // map the breakpoints
 $breakpoints: (
-	'mobile-min': $mobilebreak,
-	'phablet-min': $phabletbreak,
-	'tablet-min': $tabletbreak,
-	'laptop-min': $laptopbreak,
-	'desktop-min': $desktopbreak,
-	'mobile-max': $phabletbreak - 1,
-	'phablet-max': $tabletbreak - 1,
-	'tablet-max': $laptopbreak - 1,
-	'laptop-max': $desktopbreak - 1,
+	mobile-min: $mobilebreak,
+	phablet-min: $phabletbreak,
+	tablet-min: $tabletbreak,
+	laptop-min: $laptopbreak,
+	desktop-min: $desktopbreak,
+	mobile-max: $phabletbreak - 1,
+	phablet-max: $tabletbreak - 1,
+	tablet-max: $laptopbreak - 1,
+	laptop-max: $desktopbreak - 1,
 );
 
 $grid-break-point-tablet:$tabletbreak;
