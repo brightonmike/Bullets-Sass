@@ -86,30 +86,41 @@
 
 // breakpoints 
 
- @mixin breakpoint($point) {
+@function break($key) {
+  @return map-get($breakpoints, $key)
+}
 
-  @if type-of($point) == 'string' {
-
-    @if $point == desktop {
-       @media (min-width: $desktopbreak) { @content ; }
+@mixin breakpoint($point, $rule: 'min') {
+  $keys: map-keys($breakpoints);
+  $valid-point: false;
+  $valid-rule: false;
+  // validate
+  @each $key in $keys {
+    @if (str-index($key, $point)) {
+      $valid-point: true;
     }
-    @else if $point == laptop {
-       @media (min-width: $laptopbreak) { @content ; }
+    @if (str-index($key, $rule)) or $rule == 'only' {
+      $valid-rule: true;
     }
-    @else if $point == tablet {
-       @media (min-width: $tabletbreak) { @content ; }
-    }
-    @else if $point == phablet {
-       @media (min-width: $phabletbreak)  { @content ; }
-    }
-    @else if $point == mobileonly {
-       @media (max-width: $mobilebreak)  { @content ; }
-    }
-    
   }
-
-  @if type-of($point) == 'number' {
-    @media (min-width: $point) { @content ; }
+  // feed errors back
+  @if $point == 'desktop' and $rule == 'only' {
+    @error "You supplied 'desktop' and 'only' - there is no 'desktop-max' breakpoint."
   }
-
+  
+  @if not $valid-rule or not $valid-point {
+    $breakpoint-key: #{$point}-#{$rule};
+    @error "#{$breakpoint-key} wasn't found. Please check $breakpoints map in settings.scss."
+  }
+ 
+  // the media query
+  @if $rule == 'only' {
+    @media (min-width: break(#{$point}-min)) and (max-width: break(#{$point}-max)) {
+      @content
+    }
+  } @else {
+    @media (#{$rule}-width: break(#{$point}-#{$rule})) {
+      @content
+    }
+  }
 }

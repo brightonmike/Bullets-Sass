@@ -95,6 +95,18 @@ $laptopbreak:rem-calc(1024);
 $tabletbreak:rem-calc(768);
 $phabletbreak:rem-calc(460);
 $mobilebreak:rem-calc(320);
+// map the breakpoints
+$breakpoints: (
+	'mobile-min': $mobilebreak,
+	'phablet-min': $phabletbreak,
+	'tablet-min': $tabletbreak,
+	'laptop-min': $laptopbreak,
+	'desktop-min': $desktopbreak,
+	'mobile-max': $phabletbreak - 1,
+	'phablet-max': $tabletbreak - 1,
+	'tablet-max': $laptopbreak - 1,
+	'laptop-max': $desktopbreak - 1,
+);
 
 $grid-break-point-tablet:$tabletbreak;
 $grid-break-point-desktop:$laptopbreak;
