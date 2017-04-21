@@ -124,3 +124,24 @@
     }
   }
 }
+
+
+// font sizes
+
+@mixin font-size($fs-map) {
+  $keys: map-keys($breakpoints);
+
+  @each $key, $fs-font-size in $fs-map {
+    @if $key == null {
+      font-size: $fs-font-size;
+    } @else {
+
+      @media screen and (min-width: break(#{$key}-min)) {
+        font-size: rem-calc($fs-font-size);
+      }
+
+    }
+  }
+
+}
+
