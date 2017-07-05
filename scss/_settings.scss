@@ -27,13 +27,7 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 
-// Typography
-$h1-base-size:24px;
-$h2-base-size:22px;
-$h3-base-size:20px;
-$h4-base-size:18px;
-$h5-base-size:18px;
-$h6-base-size:16px;
+// Typography - null is effectively mobile
 
 $h1-font-sizes: (
   null  : 28px,
