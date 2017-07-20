@@ -12,6 +12,8 @@
 		font-size: $button-font-size;
 
 		transition: all 0.2s ease;
+		
+		border: none;
 
 		@if $button-rounded == true {
 			border-radius: $button-border-radius;
