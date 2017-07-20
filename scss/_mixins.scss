@@ -132,16 +132,19 @@
   $keys: map-keys($breakpoints);
 
   @each $key, $fs-font-size in $fs-map {
+    $fs-line-height: $fs-font-size + 10px;
+
     @if $key == null {
+      line-height: $fs-line-height;
       font-size: $fs-font-size;
     } @else {
 
       @media screen and (min-width: break(#{$key}-min)) {
+        line-height: rem-calc($fs-line-height);
         font-size: rem-calc($fs-font-size);
       }
 
     }
   }
-
 }
 
