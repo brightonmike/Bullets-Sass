@@ -27,7 +27,7 @@ Get started
   ```
   
   
-  ### Basic Docs
+### Basic Docs
 
 - Get started by tweaking the settings in settings.scss
 - You can remove or add the mixins in the style.scss file to only include what you need.
@@ -41,11 +41,6 @@ Get started
 
 If you want to contribute - feel free. All pull requests considered. However, the aim of Bullets is to be light weight and skinny, so feature requests will always bare this in mind.
 
-
-### Sites built with Bullets
-
-- http://www.pharmatsea.co.uk/ (Bullets version 1)
-- http://formationfm.co.uk/
 
 Grid
 ====
