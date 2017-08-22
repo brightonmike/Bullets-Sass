@@ -167,3 +167,4 @@ Bullets comes with an `.embed` class. Add this to a `<div>` containing a video i
 Bullets comes with some basic input styling.
 
   
+Icon from flaticon.com.
