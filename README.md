@@ -68,7 +68,7 @@ Bullets comes with a helper for creating CSS Grids. You should include the mixin
 
 ```
 .page {
-    @include bullets-css-grid($column-min, $column-max, $row-min, $row-max, $global-padding);
+    @include bullets-css-grid($column-min, $column-max, $row-min, $row-max, $grid-gap);
 }
 ```
 
