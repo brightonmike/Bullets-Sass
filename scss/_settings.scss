@@ -138,6 +138,7 @@ $column-min: 200px;
 $column-max: 12fr;
 $row-min: 150px;
 $row-max: auto;
+$grid-gap: $global-padding;
 
 // map the breakpoints
 $breakpoints: (
