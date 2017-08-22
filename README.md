@@ -72,7 +72,7 @@ Bullets comes with a helper for creating CSS Grids. You should include the mixin
 }
 ```
 
-You shouldn't try to use one container to handle all your grids, or try to recreate a 12 column grid using CSS grid. Instead, use the mixin to help you create containers on parent elements such as whole pages.
+You shouldn't try to use one container to handle all your grids, or try to recreate a 12 column grid using CSS grid. Instead, use the mixin to help you create containers on parent elements such as whole pages. The Bullets CSS Grid auto-fills.
 
 *Variables*
 The mixin affects the following variables so you can define grid containers on the fly.
