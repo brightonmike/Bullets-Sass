@@ -1,6 +1,14 @@
 @mixin bullets-image {
+
+    figure {
+        margin: 0;
+        padding: $global-padding/2;
+        background: $light-gray;
+    }
+
 	img {
-		max-width:100%;
-		display:inline-block;
+		max-width: 100%;
+		display: block;
 	}
+
 } // end mixin

@@ -133,6 +133,12 @@ $tabletbreak:rem-calc(768);
 $phabletbreak:rem-calc(460);
 $mobilebreak:rem-calc(320);
 
+// CSS Grid
+$column-min: 200px;
+$column-max: 12fr;
+$row-min: 150px;
+$row-max: auto;
+
 // map the breakpoints
 $breakpoints: (
 	mobile-min: $mobilebreak,
