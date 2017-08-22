@@ -11,7 +11,7 @@ var gulp  = require('gulp'),
 
 // Compile Sass, Autoprefix and minify
 gulp.task('styles', function() {
-    return gulp.src('./scss/style.scss')
+    return gulp.src(['./scss/style.scss'])
         .pipe(plumber(function(error) {
             gutil.log(gutil.colors.red(error.message));
             this.emit('end');
