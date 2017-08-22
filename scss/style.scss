@@ -31,8 +31,3 @@
 @import "bullets/organisms/bullets-header";
 @import "bullets/organisms/bullets-footer";
 @import "bullets/organisms/bullets-article";
-
-// CSS Grid
-.grid {
-    @include bullets-css-grid($column-min, $column-max, $row-min, $row-max, $grid-gap);
-}
