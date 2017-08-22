@@ -1,4 +1,4 @@
-@mixin bullets-css-grid($column-min, $column-max, $row-min, $row-max, $global-padding) {
+@mixin bullets-css-grid($column-min, $column-max, $row-min, $row-max, $grid-gap) {
     width: 100%;
 
     // ul stuff
@@ -7,7 +7,7 @@
     list-style: none;
 
     display: grid;
-    grid-gap: $global-padding/2;
+    grid-gap: $grid-gap/2;
     grid-template-columns: repeat(auto-fill, minmax($column-min, $column-max));
     grid-auto-rows: minmax($row-min, $row-max);
 } // end mixin

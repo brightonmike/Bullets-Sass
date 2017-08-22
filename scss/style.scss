@@ -34,5 +34,5 @@
 
 // CSS Grid
 .grid {
-    @include bullets-css-grid($column-min, $column-max, $row-min, $row-max, $global-padding);
+    @include bullets-css-grid($column-min, $column-max, $row-min, $row-max, $grid-gap);
 }
