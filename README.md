@@ -1,3 +1,5 @@
+![Alt text](https://cdn.rawgit.com/brightonmike/Bullets-Sass/master/bulletslogo.svg "Bullets sass logo")
+
 # Bullets-Sass
 
 This is the pure Sass Bullets framework used in the Bullets WP starter theme.
