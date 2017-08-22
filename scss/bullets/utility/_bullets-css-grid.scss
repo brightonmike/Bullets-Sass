@@ -1,0 +1,13 @@
+@mixin bullets-css-grid($column-min, $column-max, $row-min, $row-max, $global-padding) {
+    width: 100%;
+
+    // ul stuff
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: grid;
+    grid-gap: $global-padding/2;
+    grid-template-columns: repeat(auto-fill, minmax($column-min, $column-max));
+    grid-auto-rows: minmax($row-min, $row-max);
+} // end mixin

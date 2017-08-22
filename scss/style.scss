@@ -12,6 +12,7 @@
 // import the bullets
 @import "bullets/utility/bullets-base";
 @import "bullets/utility/bullets-grid";
+@import "bullets/utility/bullets-css-grid";
 @import "bullets/utility/bullets-colour";
 
 @import "bullets/atoms/bullets-type";
@@ -30,3 +31,8 @@
 @import "bullets/organisms/bullets-header";
 @import "bullets/organisms/bullets-footer";
 @import "bullets/organisms/bullets-article";
+
+// CSS Grid
+.grid {
+    @include bullets-css-grid($column-min, $column-max, $row-min, $row-max, $global-padding);
+}
