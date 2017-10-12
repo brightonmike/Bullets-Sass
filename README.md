@@ -2,9 +2,11 @@
 
 # Bullets-Sass
 
+[![Build Status](https://travis-ci.org/brightonmike/Bullets-Sass.svg?branch=button-no-border)](https://travis-ci.org/brightonmike/Bullets-Sass)
+
 This is the pure Sass Bullets framework used in the Bullets WP starter theme.
 
-npm install bullets-sass
+`npm install bullets-sass`
 
 ### Sites built with Bullets
 
