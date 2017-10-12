@@ -1,0 +1,33 @@
+@mixin bullets-align {
+    // handle horizontal alignment
+
+    .u-align-center {
+        justify-content: center;
+    }
+
+    .u-align-justified {
+        justify-content: space-between;
+    }
+
+    .u-align-spaced {
+        justify-content: space-around;
+    }
+
+    .u-align-end {
+        justify-content: flex-end;
+    }
+
+    // handle vertical alignment
+
+    .u-align-middle {
+        align-items: center;
+    }
+
+    .u-align-bottom {
+        align-items: flex-end;
+    }
+
+    .u-align-top {
+        align-items: flex-start;
+    }
+}

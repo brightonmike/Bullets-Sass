@@ -16,7 +16,6 @@
 		flex-wrap:wrap;
 
 		.row {
-			width: auto;
 			margin-left:-$global-padding/2;
 			margin-right:-$global-padding/2;
 		}	
@@ -127,6 +126,5 @@
 		}
 		
 	}
-
 
 } // end mixin
