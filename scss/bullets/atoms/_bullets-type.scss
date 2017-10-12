@@ -1,8 +1,8 @@
 @mixin bullets-type {
 	h1,h2,h3,h4,h5,h6 {
-		font-family:$header-font-family;
-		line-height:$header-line-height;
-		margin:0 0 $header-bottom-margin;
+		font-family: $header-font-family;
+		line-height: $header-line-height;
+		margin: 0 0 $header-bottom-margin;
 	}
 
 	h1 {
@@ -128,7 +128,7 @@
 
 		border-top: 0;
 		border-right: 0;
-		border-bottom:1px;
+		border-bottom: $hr-border;
 		border-left: 0;
 	}
 } // end mixin
