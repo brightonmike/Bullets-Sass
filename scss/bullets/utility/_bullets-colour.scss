@@ -1,7 +1,15 @@
-.primary {
-
+.u-primary {
+	color: $primary;
 }
 
-.secondary {
-	
+.u-secondary {
+	color: $secondary;	
+}
+
+.u-background-primary {
+	background-color: $primary;
+}
+
+.u-background-secondary {
+	background-color: $secondary;	
 }
