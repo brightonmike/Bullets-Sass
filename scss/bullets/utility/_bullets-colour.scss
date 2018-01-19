@@ -1,15 +1,17 @@
-.u-primary {
-	color: $primary;
-}
+@mixin bullets-colour {
+    .u-primary {
+    	color: $primary;
+    }
 
-.u-secondary {
-	color: $secondary;	
-}
+    .u-secondary {
+    	color: $secondary;	
+    }
 
-.u-background-primary {
-	background-color: $primary;
-}
+    .u-background-primary {
+    	background-color: $primary;
+    }
 
-.u-background-secondary {
-	background-color: $secondary;	
+    .u-background-secondary {
+    	background-color: $secondary;	
+    }
 }

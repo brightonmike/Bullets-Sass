@@ -7,7 +7,7 @@
 @import "normalize/normalize";
 
 // import WP styles
-@import "wordpress";
+@import "bullets/utility/wordpress";
 
 // import the bullets
 @import "bullets/utility/bullets-base";
@@ -25,6 +25,5 @@
 
 @import "bullets/molecules/bullets-tablestripe";
 @import "bullets/molecules/bullets-forms";
-@import "bullets/molecules/bullets-hero";
 
 @import "bullets/organisms/bullets-tables";
