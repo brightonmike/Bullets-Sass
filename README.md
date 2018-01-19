@@ -21,6 +21,22 @@ Get started
   ```
   @import "settings";
   @import "../../node_modules/bullets-sass/scss/style";
+  @include bullets-wordpress;
+
+  @include bullets-grid;
+  @include bullets-align;
+  @include bullets-colour;
+  @include bullets-touch;
+
+  @include bullets-type;
+  @include bullets-links;
+  @include bullets-inputs;
+  @include bullets-button;
+  @include bullets-image;
+  @include bullets-embed;
+
+  @include bullets-forms;
+  @include bullets-table;
   ```
     
 - Create a settings file (copy from the package) and save as `_settings.scss` and place in the same location as your `style.scss` file.
